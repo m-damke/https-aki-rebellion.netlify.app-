@@ -1,0 +1,45 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "seiten"
+    label: "Seiten"
+    files:
+      - label: "Startseite"
+        name: "startseite"
+        file: "index.html"
+        fields:
+          - { label: "Titel", name: "title", widget: "string" }
+          - { label: "Inhalt", name: "body", widget: "markdown" }
+
+      - label: "Dankeseite"
+        name: "danke"
+        file: "danke.html"
+        fields:
+          - { label: "Titel", name: "title", widget: "string" }
+          - { label: "Inhalt", name: "body", widget: "markdown" }
+
+      - label: "Impressum"
+        name: "impressum"
+        file: "impressum.html"
+        fields:
+          - { label: "Titel", name: "title", widget: "string" }
+          - { label: "Text", name: "body", widget: "markdown" }
+
+      - label: "Kontakt"
+        name: "kontakt"
+        file: "kontakt.html"
+        fields:
+          - { label: "Titel", name: "title", widget: "string" }
+          - { label: "Inhalt", name: "body", widget: "markdown" }
+
+      - label: "Datenschutz"
+        name: "datenschutz"
+        file: "datenschutz.html"
+        fields:
+          - { label: "Titel", name: "title", widget: "string" }
+          - { label: "Inhalt", name: "body", widget: "markdown" }
