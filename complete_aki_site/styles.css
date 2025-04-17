@@ -1,0 +1,23 @@
+/* Für Bildschirme mit einer maximalen Breite von 768px (z. B. Smartphones) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+body {
+    font-size: 16px;
+    line-height: 1.6;
+}
